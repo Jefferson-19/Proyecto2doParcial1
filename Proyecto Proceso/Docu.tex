@@ -32,7 +32,9 @@
 
 \noindent \textbf{PROYECTO SEGUNDO PARCIAL DE PROCESO DE SOFTWARE}
 
-\noindent NORMAS ISO 9001 DE EL SOFTWARE ``DIMM SRI''
+\noindent \textbf{``Aplicaci\'{o}n de dise\~{n}o y desarrollo en un software open source''}
+
+\noindent NORMAS ISO 9001 DE EL SOFTWARE ``ERESTAURANT CSS''
 
 \noindent 
 
@@ -310,7 +312,7 @@
 \item  Una retroalimentaci\'{o}n de todo lo consumido, antes de facturar.
 \end{enumerate}
 
-\includegraphics*[width=6.67in, height=3.46in, keepaspectratio=false]{image7}
+\noindent \includegraphics*[width=6.67in, height=3.46in, keepaspectratio=false]{image7}
 
 \noindent \textbf{}
 
@@ -319,6 +321,202 @@
 \noindent 
 
 \noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \textbf{3) Dise\~{n}o y desarrollo}
+
+\noindent \textbf{           3.1) Dise\~{n}o del Software}
+
+\noindent El sistema esta orientado para la que las diversas interfaces integradas en el proyecto para que en conjunto se pueda integrar en un proceso exitoso y sobre todo de calidad comenzando de su dise\~{n}o grafico y dise\~{n}o de su arquitectura ya que esta separado por diversos m\'{o}dulos donde cada modulo esta comentado por cada funci\'{o}n que ejecuta el programa.
+
+\noindent \textbf{    3.2) Dise\~{n}o de los datos}
+
+\noindent Cada m\'{o}dulo tiene que relacionarse entre s\'{i}, debido que cada una de las acciones que se realice anteriormente, se tendr\'{a} que ver afectado a una decisi\'{o}n a futuro entonces, esto se logra que al momento de programar se utilizo funciones que tienen par\'{a}metros de una funci\'{o}n anterior.
+
+\noindent Ej. del c\'{o}digo fuente.-
+
+\begin{tabular}{|p{0.4in}|p{3.7in}|} \hline 
+ \\ \hline 
+/** \\ \hline 
+ &  * 1. Avoid the WebKit bug in Android 4.0.* where \eqref{GrindEQ__2_} destroys native `audio` \\ \hline 
+ &  *    and `video` controls. \\ \hline 
+ &  * 2. Correct inability to style clickable `input` types in iOS. \\ \hline 
+ &  * 3. Improve usability and consistency of cursor style between image-type \\ \hline 
+ &  *    `input` and others. \\ \hline 
+ &  */ \\ \hline 
+ & \newline  \\ \hline 
+ & button, \\ \hline 
+ & html input[type="button"], /* 1 */ \\ \hline 
+ & input[type="reset"], \\ \hline 
+ & input[type="submit"] $\mathrm{\{}$ \\ \hline 
+ &   -webkit-appearance: button; /* 2 */ \\ \hline 
+ &   cursor: pointer; /* 3 */ \\ \hline 
+ & $\mathrm{\}}$ \\ \hline 
+ & \newline  \\ \hline 
+ & /** \\ \hline 
+ &  * Re-set default cursor for disabled elements. \\ \hline 
+ &  */ \\ \hline 
+ & \newline  \\ \hline 
+ & button[disabled], \\ \hline 
+ & html input[disabled] $\mathrm{\{}$ \\ \hline 
+ &   cursor: default; \\ \hline 
+ & $\mathrm{\}}$ \\ \hline 
+ & \newline  \\ \hline 
+ & /** \\ \hline 
+ &  * Remove inner padding and border in Firefox 4+. \\ \hline 
+ &  */ \\ \hline 
+ & \newline  \\ \hline 
+ & button::-moz-focus-inner, \\ \hline 
+ & input::-moz-focus-inner $\mathrm{\{}$ \\ \hline 
+ &   border: 0; \\ \hline 
+ &   padding: 0; \\ \hline 
+ & $\mathrm{\}}$ \\ \hline 
+ & \newline  \\ \hline 
+ & /** \\ \hline 
+ &  * Address Firefox 4+ setting `line-height` on `input` using `!important` in \\ \hline 
+ &  * the UA stylesheet. \\ \hline 
+ &  */ \\ \hline 
+ & \newline  \\ \hline 
+ & input $\mathrm{\{}$ \\ \hline 
+ &   line-height: normal; \\ \hline 
+ & $\mathrm{\}}$ \\ \hline 
+ & \newline  \\ \hline 
+ & /** \\ \hline 
+ &  * It's recommended that you don't attempt to style these elements. \\ \hline 
+ &  * Firefox's implementation doesn't respect box-sizing, padding, or width. \\ \hline 
+ &  * \\ \hline 
+ &  * 1. Address box sizing set to `content-box` in IE 8/9/10. \\ \hline 
+ &  * 2. Remove excess padding in IE 8/9/10. \\ \hline 
+ &  */ \\ \hline 
+ & \newline  \\ \hline 
+ & input[type="checkbox"], \\ \hline 
+ & input[type="radio"] $\mathrm{\{}$ \\ \hline 
+ &   box-sizing: border-box; /* 1 */ \\ \hline 
+ &   padding: 0; /* 2 */ \\ \hline 
+ & $\mathrm{\}}$ \\ \hline 
+ &  \\ \hline 
+\end{tabular}
+
+
+
+\noindent 
+
+\noindent 
+
+\noindent En este ejemplo se da a notar el dise\~{n}o de datos de como se relacionan cada uno de los datos que se utilizaron (en el ejemplo se explica como se relaciona el m\'{o}dulo de los botones).
+
+\noindent 
+
+\noindent \textbf{3.3) Dise\~{n}o Arquitect\'{o}nico}
+
+\noindent El dise\~{n}o arquitect\'{o}nico es que el sistema se emplea con una base de datos MySQL y tambi\'{e}n esta empleada en HTML5. Donde a futuro se puede conseguir un servidor web e implementar en la intranet, el dise\~{n}o.
+
+\noindent Ej.
+
+\begin{tabular}{|p{0.6in}|p{4.0in}|} \hline 
+$\mathrm{<}$!DOCTYPE html$\mathrm{>}$ \\ \hline 
+ & $\mathrm{<}$html lang="es"$\mathrm{>}$ \\ \hline 
+ & $\mathrm{<}$head$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$meta charset="UTF-8"$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$title$\mathrm{>}$Aplicacion Lacatedral$\mathrm{<}$/title$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$link rel="stylesheet" href="css/normalize.css"$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$link rel="stylesheet" href="css/app.css"$\mathrm{>}$ \\ \hline 
+ & \newline  \\ \hline 
+ &  $\mathrm{<}$script src="js/jquery-1.12.0.min.js"$\mathrm{>}$$\mathrm{<}$/script$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$script src="js/app.js"$\mathrm{>}$$\mathrm{<}$/script$\mathrm{>}$ \\ \hline 
+ & $\mathrm{<}$/head$\mathrm{>}$ \\ \hline 
+ & $\mathrm{<}$body$\mathrm{>}$ \\ \hline 
+ & \newline  \\ \hline 
+ &  $\mathrm{<}$header class="header"$\mathrm{>}$ \\ \hline 
+ &   $\mathrm{<}$h2 class="title--Header"$\mathrm{>}$ \\ \hline 
+ &    Lacatedraldelpisco - App \\ \hline 
+ &   $\mathrm{<}$/h2$\mathrm{>}$ \\ \hline 
+ &  $\mathrm{<}$/header$\mathrm{>}$ \\ \hline 
+ & \newline  \\ \hline 
+ &  $\mathrm{<}$main$\mathrm{>}$ \\ \hline 
+ &   $\mathrm{<}$header class="headerMain"$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$div class="iz--HeaderMain"$\mathrm{>}$ \\ \hline 
+ &     $\mathrm{<}$h2 class="title"$\mathrm{>}$ \\ \hline 
+ &     \'{U}ltimos Pedidos - Pollos \\ \hline 
+ &     $\mathrm{<}$/h2$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$/div$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$div class="de--HeaderMain"$\mathrm{>}$ \\ \hline 
+ &     $\mathrm{<}$span class="title"$\mathrm{>}$ \\ \hline 
+ &      \\ \hline 
+ &     $\mathrm{<}$/span$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$/div$\mathrm{>}$ \\ \hline 
+ &   $\mathrm{<}$/header$\mathrm{>}$ \\ \hline 
+ &   $\mathrm{<}$section class="pedidosMain"$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$nav class="navPedidos"$\mathrm{>}$ \\ \hline 
+ &     $\mathrm{<}$ul class="ul"$\mathrm{>}$ \\ \hline 
+ &      $\mathrm{<}$li class="list"$\mathrm{>}$ \\ \hline 
+ &       Mesa \\ \hline 
+ &      $\mathrm{<}$/li$\mathrm{>}$ \\ \hline 
+ &      $\mathrm{<}$li class="list"$\mathrm{>}$ \\ \hline 
+ &       Pedido \\ \hline 
+ &      $\mathrm{<}$/li$\mathrm{>}$ \\ \hline 
+ &      $\mathrm{<}$li class="list"$\mathrm{>}$ \\ \hline 
+ &       Hora \\ \hline 
+ &      $\mathrm{<}$/li$\mathrm{>}$ \\ \hline 
+ &      $\mathrm{<}$li class="list"$\mathrm{>}$ \\ \hline 
+ &       Aprobar \\ \hline 
+ &      $\mathrm{<}$/li$\mathrm{>}$ \\ \hline 
+ &       \\ \hline 
+ &     $\mathrm{<}$/ul$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$/nav$\mathrm{>}$ \\ \hline 
+ &    $\mathrm{<}$section class="content jsInsertMain"$\mathrm{>}$ \\ \hline 
+ &      \\ \hline 
+ &    $\mathrm{<}$/section$\mathrm{>}$ \\ \hline 
+ & \newline  \\ \hline 
+ &   $\mathrm{<}$/section$\mathrm{>}$ \\ \hline 
+ &    \\ \hline 
+ &  $\mathrm{<}$/main$\mathrm{>}$ \\ \hline 
+ &   \\ \hline 
+ & $\mathrm{<}$/body$\mathrm{>}$ \\ \hline 
+ & $\mathrm{<}$/html$\mathrm{>}$ \\ \hline 
+\end{tabular}
+
+
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \textbf{3.4) Desarrollo}
+
+\noindent \textbf{       3.4.1) Fase de actuaci\'{o}n}
+
+\begin{enumerate}
+\item \textbf{ Requisitos para los productos}. Uno de los mayores problemas en la organizaci\'{o}n era la falta de documentaci\'{o}n y gesti\'{o}n de la misma. En lugar de usar dibujos y especificaciones de condiciones, ten\'{i}an una muestra de cada producto y tomaron medidas de ellos para producir nuevos platos. El ingeniero que fue contratado con anterioridad entend\'{i}a la necesidad de sistematizaci\'{o}n de la documentaci\'{o}n y digitalizaci\'{o}n de los dibujos, pero al ser la \'{u}nica persona a encargada de la gesti\'{o}n nunca tuvo el tiempo suficiente para completarlo.
+
+\item  \textbf{Proceso de producci\'{o}n}. Las personas que trabajaban en la producci\'{o}n eran muy h\'{a}biles, pero estaban mal dirigidas. Sin procedimientos e instrucciones precisas de trabajo nunca estaban seguros de lo que ten\'{i}an que hacer. A menudo se basaron en los deseos del director general en lugar de en las descripciones del trabajo. La creaci\'{o}n de un procedimiento documentado para la producci\'{o}n ayud\'{o} a definir todas las actividades en el proceso y as\'{i} mantener el proceso bajo control. Este problema tambi\'{e}n se trat\'{o} con el procedimiento de producci\'{o}n.
+\end{enumerate}
+
+\noindent 
+
+\noindent \textbf{4)Fase de comprobaci\'{o}n}
+
+\textbf{       4.1)Validaciones}
+
+\begin{enumerate}
+\item \textbf{ Monitoreo, medici\'{o}n, an\'{a}lisis y evaluaci\'{o}n}. No hab\'{i}a instrucciones estrictas y precisas sobre lo que debe ser monitoreado y medido, y cu\'{a}ndo. Los trabajadores se basaban la mayor\'{i}a en su experiencia. Al final del proceso de producci\'{o}n realizaban un simple control de calidad. Un trabajador examinaba los productos para identificar defectos y errores. Pero con frecuencia no sab\'{i}an d\'{o}nde buscar y qu\'{e} requisitos del producto eran necesarios satisfacer.
+
+\item  \textbf{Manipulaci\'{o}n de las no conformidades y reclamaciones de los clientes}. 
+\end{enumerate}
+
+\noindent Las no conformidades identificadas nunca fueron analizadas y en lugar de eliminar la causa, simplemente se cre\'{o} un nuevo producto. Lo peor fue con quejas de los clientes, debido a que los productos fueron enviados a miles de kil\'{o}metros y no pod\'{i}an ser reparados. S\'{o}lo se sustituyeron, por lo que todas las quejas significaron grandes p\'{e}rdidas para la organizaci\'{o}n. La implementaci\'{o}n de un proceso de gesti\'{o}n de no conformidades y acciones correctivas fue muy beneficiosa para la organizaci\'{o}n. Ya que m\'{a}s tarde se descubrieron los fallos en el proceso de encolado y se lograron evitar m\'{a}s no conformidades.
+
+\includegraphics*[width=6.66in, height=3.46in, keepaspectratio=false]{image8}
 
 \noindent 
 
